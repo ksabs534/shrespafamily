@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="yana.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html"><img src="images/HOME.png" alt="" /></a>
+    </div>
+    <div class="container_1">
+      <img src="yana_pics/Picture1.png" alt="" />
+    </div>
+    <h3>My Art Gallery</h3>
+    <div class="photo_gallery">
+      <img src="yana_pics/pic_1.jpg" onclick="FullView(this.src)" />
+      <img src="yana_pics/pic_2.jpg" onclick="FullView(this.src)" />
+      <img src="yana_pics/pic_3.jpg" onclick="FullView(this.src)" />
+      <img src="yana_pics/pic_4.jpg" onclick="FullView(this.src)" />
+      <img src="yana_pics/pic_5.jpg" onclick="FullView(this.src)" />
+      <img src="yana_pics/pic_6.jpg" onclick="FullView(this.src)" />
+      <img src="yana_pics/pic_7.jpg" onclick="FullView(this.src)" />
+    </div>
+    </div>
+
+    <div class="container_2">
+      <img src="yana_pics/takewondo_HTML.png" alt="">
+      
+    </div>
+    <div>
+        <h3>Takewondo Art Gallery</h3>
+      </div>
+      <div class="photo_gallery">
+        <img src="yana_pics/tekwondo_1.jpg" onclick="FullView(this.src)" alt="">
+        <img src="yana_pics/tekwondo_2.jpg" onclick="FullView(this.src)" alt="">  
+        <img src="yana_pics/tekwondo_3.jpeg" onclick="FullView(this.src)" alt="">
+        <img src="yana_pics/tekwondo_4.jpeg" onclick="FullView(this.src)" alt="">
+      </div>
+
+    <div id="FullImageView">
+      <img id="FullImage" />
+      <span id="CloseButton" onclick="CloseFullView()">×</span>
+    </div>
+
+    <script type="text/javascript">
+      function FullView(ImgLink) {
+        document.getElementById("FullImage").src = ImgLink;
+        document.getElementById("FullImageView").style.display = "block";
+      }
+      function CloseFullView() {
+        document.getElementById("FullImageView").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
